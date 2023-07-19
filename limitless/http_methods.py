@@ -1,0 +1,1 @@
+HTTP_METHOD_GET = "GET"
