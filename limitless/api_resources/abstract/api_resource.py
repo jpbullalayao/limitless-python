@@ -1,4 +1,6 @@
-class APIResource(dict):
+from limitless.limitless_object import LimitlessObject
+
+class APIResource(LimitlessObject):
 
     @classmethod
     def class_url(cls):

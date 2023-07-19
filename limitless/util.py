@@ -1,11 +1,9 @@
 from limitless.limitless_response import LimitlessResponse
-# from sendbird.sendbird_object import SendbirdObject
+from limitless.limitless_object import LimitlessObject
 
 
 def convert_to_limitless_object(resp, cls):
     if isinstance(resp, LimitlessResponse):
-        print('limitlessresponse')
-        print(resp)
         limitless_response = resp
         resp = limitless_response.data
 
@@ -14,10 +12,10 @@ def convert_to_limitless_object(resp, cls):
             convert_to_limitless_object(result, cls) for result in resp
         ]
 
-    # elif isinstance(resp, dict) and not isinstance(
-    #     resp, SendbirdObject
-    # ):
-    #     return cls.construct_from(resp)
+    elif isinstance(resp, dict) and not isinstance(
+        resp, LimitlessObject
+    ):
+        return cls.construct_from(resp)
 
     else:
         return resp
