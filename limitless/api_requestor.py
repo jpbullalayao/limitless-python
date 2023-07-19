@@ -1,6 +1,8 @@
 import requests
 import limitless
 
+from limitless.limitless_response import LimitlessResponse
+
 class APIRequestor(object):
     def __init__(
         self,
@@ -13,10 +15,8 @@ class APIRequestor(object):
 
     def request(self, http_method, url, params=None):
         rbody = self.request_raw(http_method, url, params)
-        return rbody
-
-        # resp = self.interpret_response(rbody)
-        # return resp
+        resp = self.interpret_response(rbody)
+        return resp
 
     def request_raw(self, http_method, url, params=None):
         if url.startswith("/"):
@@ -37,3 +37,7 @@ class APIRequestor(object):
             "X-Access-Key": self.api_token,
         }
         return headers
+
+    def interpret_response(self, rbody):
+        resp = LimitlessResponse(rbody.text)
+        return resp
