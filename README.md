@@ -58,4 +58,4 @@ If you need to get a hold of me regarding this project, feel free to either:
 - email me at professor.ragna@gmail.com
 - tweet me @professorragna
 
-If you're interested in helping to fund this project, you can donate to me
+If you're interested in helping to fund this project, you can support me [here](https://www.buymeacoffee.com/professorragna)
