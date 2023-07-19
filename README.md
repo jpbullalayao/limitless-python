@@ -11,7 +11,6 @@ For more information, check out the [Limitless](https://limitlesstcg.com/) home 
 ## Usage
 
 ```python
-
 import limitless
 limitless.api_token = "..."
 
@@ -39,13 +38,11 @@ Find more usage documentation at our [wiki](https://github.com/jpbullalayao/limi
 
 ## Setup
 
-You will need the `pip`, and the `requests` library installed on your machine in order to develop locally. One way to do this is to install a virtual environment that contains your `requests` package. To do this, see the instructions below. This assumes that you already have `pip` installed.
+You will need `pip`, and the `requests` library installed on your machine in order to develop locally. See the instructions below. The instructions assume that you already have `pip` installed.
 
 ```
-$ pip install --user virtualenv
-$ cd sendbird-python
-$ python -m venv sendbird-python
-$ source env/bin/activate
+$ git clone git@github.com:jpbullalayao/limitless-python.git
+$ cd limitless-python
 $ pip install requests
 ```
 
@@ -56,6 +53,6 @@ Interested in the progress of this project? Feel free to follow the repo for liv
 If you need to get a hold of me regarding this project, feel free to either:
 
 - email me at professor.ragna@gmail.com
-- tweet me @professorragna
+- tweet me [@professorragna](https://twitter.com/professorragna)
 
-If you're interested in helping to fund this project, you can support me [here](https://www.buymeacoffee.com/professorragna)
+If you're interested in helping to fund this project, you can support me [here](https://www.buymeacoffee.com/professorragna). Any and all support is greatly appreciated!
