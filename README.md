@@ -8,6 +8,12 @@ Limitless is an organization that provides competitive resources and information
 
 For more information, check out the [Limitless](https://limitlesstcg.com/) home page.
 
+## Installation
+
+```
+$ pip3 install limitless-python
+```
+
 ## Usage
 
 ```python
@@ -35,16 +41,6 @@ Game
 ```
 
 Find more usage documentation at our [wiki](https://github.com/jpbullalayao/limitless-python/wiki). Note, the documentation is still a work in progress!
-
-## Setup
-
-You will need `pip`, and the `requests` library installed on your machine in order to develop locally. See the instructions below. The instructions assume that you already have `pip` installed.
-
-```
-$ git clone git@github.com:jpbullalayao/limitless-python.git
-$ cd limitless-python
-$ pip install requests
-```
 
 ## Author's Note
 
