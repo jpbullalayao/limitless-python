@@ -6,7 +6,7 @@ from limitless.api_resources.abstract.listable_api_resource import ListableAPIRe
 
 class Game(ListableAPIResource):
     RESOURCE_NAME = "game"
-    FIELD_PK = "game_id"
+    FIELD_PK = "id"
 
     def get_decks(self, pk):
         pass
