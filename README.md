@@ -27,7 +27,7 @@ limitless.Tournament.list()
 limitless.Game.list()
 
 # Retrieve only VGC tournaments
-limitless.Tournament.list(id="VGC") # "VGC" ID retrieved from game list via limitless.Game.list()
+limitless.Tournament.list(game="VGC") # "VGC" game retrieved from game list via limitless.Game.list()
 
 # Retrieve standings from specific tournament
 limitless.Tournament.get_standings(id="64a347f1fa3294423e4e0d23") # ID retrieved from tournament list via limitless.Tournament.list()
