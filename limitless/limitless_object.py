@@ -1,3 +1,5 @@
+import json
+
 class LimitlessObject(dict):
     def __init__(self, pk, api_token=None, **params):
         super(LimitlessObject, self).__init__()
@@ -14,6 +16,34 @@ class LimitlessObject(dict):
 
     def __getattr__(self, k):
         return self[k]
+
+    def _filter_internal_fields(self, obj):
+        """Recursively filter out internal fields from dict/object structures."""
+        if isinstance(obj, LimitlessObject):
+            # Convert LimitlessObject to dict and filter
+            result = {}
+            for k, v in obj.items():
+                if k != 'api_token':
+                    result[k] = self._filter_internal_fields(v)
+            return result
+        elif isinstance(obj, dict):
+            # Handle regular dicts
+            result = {}
+            for k, v in obj.items():
+                if k != 'api_token':
+                    result[k] = self._filter_internal_fields(v)
+            return result
+        elif isinstance(obj, list):
+            # Handle lists
+            return [self._filter_internal_fields(item) for item in obj]
+        else:
+            # Return primitive types as-is
+            return obj
+
+    def __repr__(self):
+        """Pretty print using JSON format for REPL display."""
+        filtered_data = self._filter_internal_fields(self)
+        return json.dumps(filtered_data, indent=2, sort_keys=True)
 
     @classmethod
     def get_pk_field(cls):

@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
 	name="limitless-python",
-	version="1.0.1",
+	version="1.1.0",
 	author="Professor Ragna",
 	author_email="professor.ragna@gmail.com",
 	long_description="Python wrapper for the LimitlessTCG API",
