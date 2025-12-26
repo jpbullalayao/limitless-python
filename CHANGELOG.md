@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.1.0] - 2025-01-27
+
+### Added
+- Added pretty printing to `LimitlessObject` responses using JSON formatting with indentation and sorted keys.
+
 ## [1.0.1] - 2025-12-26
 
 ### Added
@@ -19,6 +24,7 @@
 - Support for retrieving tournament standings via `limitless.Tournament.get_standings(id="...")`
 - Support for listing games via `limitless.Game.list()`
 
+[1.1.0]: https://github.com/jpbullalayao/limitless-python/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/jpbullalayao/limitless-python/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/jpbullalayao/limitless-python/releases/tag/v1.0.0
 

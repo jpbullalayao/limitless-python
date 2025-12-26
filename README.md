@@ -10,7 +10,13 @@ For more information, check out the [Limitless](https://limitlesstcg.com/) home 
 
 ## Installation
 
+Below are some commands to install `limitless-python`, based on your project / environment:
+
 ```
+$ uv add limitless-python
+
+$ uv pip install limitless-python
+
 $ pip3 install limitless-python
 ```
 
@@ -40,15 +46,13 @@ Tournament
 Game
 ```
 
-Find more usage documentation at our [wiki](https://github.com/jpbullalayao/limitless-python/wiki). Note, the documentation is still a work in progress!
+Find more usage documentation at our [wiki](https://github.com/jpbullalayao/limitless-python/wiki)
 
 ## Author's Note
 
-Interested in the progress of this project? Feel free to follow the repo for live updates!
+Interested in the progress of this project? Follow & star the repo for live updates!
 
 If you need to get a hold of me regarding this project, feel free to either:
 
 - email me at professor.ragna@gmail.com
 - tweet me [@professorragna](https://twitter.com/professorragna)
-
-If you're interested in helping to fund this project, you can support me [here](https://www.buymeacoffee.com/professorragna). Any and all support is greatly appreciated!
