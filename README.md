@@ -1,6 +1,6 @@
 # limitless-python
 
-Python wrapper for the Limitless API
+Python wrapper for the LimitlessTCG API
 
 ## Limitless? What is Limitless?
 
