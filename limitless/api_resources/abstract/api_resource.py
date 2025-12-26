@@ -23,5 +23,5 @@ class APIResource(LimitlessObject):
             api_token or limitless.api_token
         )
         response = requestor.request(method, url, params)
-        sendbird_object = convert_to_limitless_object(response,  cls)
-        return sendbird_object
+        limitless_object = convert_to_limitless_object(response,  cls)
+        return limitless_object
